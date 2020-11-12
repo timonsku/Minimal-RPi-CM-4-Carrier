@@ -1,3 +1,5 @@
+Some photos can be found here: https://hackaday.io/project/175832-minimal-raspberry-pi-cm-4-carrier
+
 Why
 ------
 The goal was to show how little you have to do to do a fairly feature rich carrier board for the Compute Module 4. Also to demonstrate that you don't have to be scared by high-speed signals like HDMI and that they can still work fine in very bad conditions like a single layer PCB like this one without a reference plane underneath.
