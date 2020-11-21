@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3752,8 +3752,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$67" library="microbuilder" deviceset="GND" device=""/>
 <part name="TP6" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
 <part name="TP7" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
-<part name="R6" library="microbuilder" deviceset="RESISTOR" device="_0402MP" value="10k"/>
-<part name="U$68" library="microbuilder" deviceset="GND" device=""/>
 <part name="C2" library="microbuilder" deviceset="CAP_CERAMIC" device="0402"/>
 <part name="C3" library="microbuilder" deviceset="CAP_CERAMIC" device="0402"/>
 <part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0402"/>
@@ -4052,13 +4050,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </instance>
 <instance part="TP7" gate="G$1" x="74.93" y="71.12" smashed="yes">
 <attribute name="NAME" x="78.74" y="71.12" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="R6" gate="G$1" x="74.93" y="10.16" smashed="yes" rot="R90">
-<attribute name="NAME" x="72.898" y="7.62" size="1.27" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="78.105" y="7.62" size="1.27" layer="96" font="vector" rot="R90"/>
-</instance>
-<instance part="U$68" gate="G$1" x="74.93" y="2.54" smashed="yes">
-<attribute name="VALUE" x="73.025" y="0.635" size="1.27" layer="96"/>
 </instance>
 <instance part="C2" gate="G$1" x="115.57" y="210.82" smashed="yes">
 <attribute name="NAME" x="118.11" y="213.36" size="1.27" layer="95" font="vector"/>
@@ -4588,7 +4579,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="50.8" y1="15.24" x2="74.93" y2="15.24" width="0.1524" layer="91"/>
 <label x="60.96" y="15.24" size="1.778" layer="95"/>
 <pinref part="TP3" gate="G$1" pin="1"/>
-<pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N_EXTRST" class="0">
@@ -4851,10 +4841,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="J4" gate="G$1" pin="4"/>
 <pinref part="U$67" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="U$68" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="P$2"/>
